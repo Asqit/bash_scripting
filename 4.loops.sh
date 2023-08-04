@@ -1,6 +1,11 @@
 #!/usr/bin/bash
 
-# For-loop
+# Loops 
+# One of the most useful part of a programming language are loops
+# loops allow you to go throught arrays, strings or number sequence with ease
+# Bash is no exception and offers you quite a number of loops.
+
+# Standard for-loop
 for i in {1..100} 
 do
 	if [ $(($i % 2)) -eq 0 ] 

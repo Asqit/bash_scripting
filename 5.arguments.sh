@@ -8,4 +8,15 @@
 # To access these parameters you can use $ sign + (0..9)
 # Bash has reserved parameter $0. (This is path+name of your script)
 
-echo "Hello $1, how are you today?"
+
+function greetings {
+    echo $1;
+}
+
+# Here we pass argument "Hello, World!" to our
+# greetings function
+greetings "Hello, World!"
+
+# Here we take a argument from script execution 
+# e.g. ./hello_world.sh andrew
+echo "$1 is nice name."
